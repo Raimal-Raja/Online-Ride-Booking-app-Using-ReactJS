@@ -2,11 +2,10 @@
 
 Two React frontend experiments for travel and ride-booking interfaces.
 
-## Repository guide
+## Setup and repository reference
 
-### Contents
+### Project structure
 
-- [README.md](README.md)
 - [my-app](my-app)
 - [my-react-app](my-react-app)
 
@@ -31,13 +30,17 @@ npm ci
 npm run start
 ```
 
-Browse the folders and linked notes above. This repository is a resource collection or documentation starter rather than a runnable application.
-
 ### Configuration and limitations
+
+Install dependencies inside each React application, not the repository root. These are frontend experiments; booking, payment and backend integration are not established by source syntax checks.
 
 ### Validation
 
-Reviewed on 2026-10-08. JavaScript source files passed node --check. Browser interaction and production builds were not verified.
+Audit: 2026-10-08. Repository structure, setup instructions and description were reviewed. 23 JavaScript files passed node --check; JSX/TypeScript production builds were not run. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+
+### Repository description
+
+The short GitHub description is provided in [REPOSITORY_DESCRIPTION.md](REPOSITORY_DESCRIPTION.md).
 
 ### Contributions
 
