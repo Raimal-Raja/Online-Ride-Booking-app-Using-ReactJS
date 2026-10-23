@@ -1,47 +1,56 @@
-# Online-Ride-Booking-app-Using-ReactJS
+# Travel and Ride Booking — React Prototypes
 
 Two React frontend experiments for travel and ride-booking interfaces.
 
-## Setup and repository reference
+## Project focus
 
-### Project structure
+React frontend prototype. Use the directory map to choose a focused example or learning topic instead of treating the repository as one application.
 
-- [my-app](my-app)
-- [my-react-app](my-react-app)
+## Workflow
 
-### Getting started
+```mermaid
+flowchart TD
+    A["Open the interface"] --> B["React components"]
+    B --> C["User interaction"]
+    C --> D{"Visible output matches input?"}
+    D -->|Yes| E["Continue the workflow"]
+    D -->|No| F["Inspect state, styles, and events"]
+    E --> C
+    F --> B
+```
+
+## Repository structure
+
+| Path | Purpose |
+| --- | --- |
+| [`my-app/`](my-app) | Project-specific source, resources, or learning material. |
+| [`my-react-app/`](my-react-app) | Project-specific source, resources, or learning material. |
+
+## Getting started
 
 ```bash
 git clone https://github.com/Raimal-Raja/Online-Ride-Booking-app-Using-ReactJS.git
 cd Online-Ride-Booking-app-Using-ReactJS
 ```
 
-Use a Node.js version compatible with each application’s package manifest. Run the applications separately:
+Use a Node.js version compatible with the application manifest. Install and run inside one app directory.
 
 ```bash
-cd "my-react-app"
-npm ci
-npm run start
+cd my-app
+npm install
+npm start
 ```
 
-```bash
-cd "my-app"
-npm ci
-npm run start
-```
+The `my-app/` and `my-react-app/` directories are separate applications; repeat setup separately for the variant you want to inspect.
 
-### Configuration and limitations
+## Verification
 
-Install dependencies inside each React application, not the repository root. These are frontend experiments; booking, payment and backend integration are not established by source syntax checks.
+Use the setup commands and inspect the selected interface, example, or notebook with known inputs. This documentation review checks repository paths and dependency declarations; it does not claim fresh end-to-end execution or model-quality measurements.
 
-### Validation
+## Contributing
 
-Recorded checks from the previous maintenance review (2026-10-08): 23 JavaScript files passed node --check; JSX/TypeScript production builds were not run. Syntax checks do not establish full runtime correctness. External APIs, live scraping, GUI interaction, notebook training and production deployment were not comprehensively exercised.
+Include reproduction steps, the affected path, expected behavior, and the checks you ran. Keep credentials, generated environments, and unnecessary build artifacts out of commits.
 
-### Contributions
+## License
 
-Describe the issue, reproduction steps, environment, and expected behavior when proposing a change. Keep generated environments, credentials, and unnecessary build artifacts out of new commits.
-
-### License
-
-No top-level license file was found during this review.
+No top-level license file is currently tracked. Check reuse permissions with the repository owner.
